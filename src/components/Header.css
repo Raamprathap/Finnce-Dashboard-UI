@@ -1,0 +1,111 @@
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg-sidebar);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  height: var(--header-height);
+  gap: 16px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.mobile-menu-btn {
+  display: none;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  background: var(--bg-input);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+}
+.mobile-menu-btn:hover { color: var(--text-primary); }
+
+.header-page-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-date-chip {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 7px 13px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.header-role-wrap { position: relative; }
+
+.role-select-wrap { position: relative; }
+
+.role-native-select {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.role-select-display {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 7px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: pointer;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.role-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.role-dot.admin { background: var(--accent); }
+.role-dot.viewer { background: var(--success); }
+
+.role-display-label { color: var(--text-primary); }
+
+@media (max-width: 900px) {
+  .app-header { padding: 0 16px; }
+  .mobile-menu-btn { display: flex; }
+  .header-date-chip { display: none; }
+}
+
+/* @media (max-width: 540px) {
+  .header-role-wrap { display: none; }
+} */

@@ -1,0 +1,156 @@
+.chart-card {
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.chart-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.chart-sub-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.chart-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.chart-big-value {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+}
+
+.chart-section-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.chart-legend {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Custom Tooltip */
+.chart-tooltip {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  box-shadow: var(--shadow-md);
+  min-width: 140px;
+}
+
+.ct-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+}
+
+.ct-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 5px;
+}
+
+.ct-row:last-child { margin-bottom: 0; }
+
+.ct-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.ct-name { flex: 1; font-size: 12px; color: var(--text-secondary); }
+.ct-val  { font-size: 13px; font-weight: 600; color: var(--text-primary); }
+
+/* Donut */
+.donut-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.donut-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
+
+.donut-legend-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.donut-legend-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.donut-legend-name {
+  flex: 1;
+  font-size: 13px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.donut-legend-pct {
+  font-size: 12px;
+  color: var(--text-muted);
+  min-width: 30px;
+  text-align: right;
+}
+
+.donut-legend-val {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  min-width: 60px;
+  text-align: right;
+}

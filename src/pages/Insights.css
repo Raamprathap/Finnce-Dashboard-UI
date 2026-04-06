@@ -1,0 +1,126 @@
+.ins-page-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.ins-page-sub {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.ins-chart-card {
+  padding: 22px 24px;
+  margin-bottom: 20px;
+}
+
+.chart-legend-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.ins-bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.ins-panel { padding: 22px 24px; }
+
+.cat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cat-row { display: flex; flex-direction: column; gap: 6px; }
+
+.cat-row-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cat-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.cat-amount {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.cat-pct {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.cat-bar-bg {
+  height: 5px;
+  background: var(--bg-input);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+
+.cat-bar-fill {
+  height: 100%;
+  border-radius: var(--radius-pill);
+  transition: width 0.5s ease;
+}
+
+.income-source-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.income-row { display: flex; flex-direction: column; gap: 6px; }
+
+.income-row-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.income-amt {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--success-text);
+}
+
+.savings-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.savings-row {
+  display: grid;
+  grid-template-columns: 36px 1fr 44px;
+  align-items: center;
+  gap: 10px;
+}
+
+.savings-month {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.savings-rate-val {
+  font-size: 13px;
+  font-weight: 700;
+  text-align: right;
+}
+
+@media (max-width: 1100px) {
+  .ins-bottom-grid { grid-template-columns: 1fr; }
+}

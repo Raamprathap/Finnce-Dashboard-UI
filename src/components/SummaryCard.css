@@ -1,0 +1,51 @@
+.summary-card {
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sc-top { width: 100%; }
+
+.sc-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sc-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.sc-icon-wrap {
+  width: 34px;
+  height: 34px;
+  background: var(--bg-input);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+}
+
+.sc-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+}
+
+.sc-bottom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.sc-subtitle {
+  font-size: 12px;
+  color: var(--text-muted);
+}
