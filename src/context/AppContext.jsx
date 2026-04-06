@@ -6,6 +6,7 @@ import {
   useCallback,
 } from "react";
 import { transactionAPI } from "../api/transactions";
+import { INITIAL_TRANSACTIONS } from "../mockData";
 
 const AppContext = createContext(null);
 const STORAGE_KEY = "finnce_v2";
@@ -33,7 +34,6 @@ export function AppProvider({ children }) {
     sortDir: "desc",
   });
 
-  // Fetch transactions from API on mount
   useEffect(() => {
     async function fetchTransactions() {
       try {
@@ -42,8 +42,8 @@ export function AppProvider({ children }) {
         const data = await transactionAPI.getTransactions();
         setTransactions(data);
       } catch (err) {
-        setError(err.message);
-        console.error("Failed to fetch transactions:", err);
+        console.error("Failed to fetch transactions, using mock data:", err);
+        setTransactions(INITIAL_TRANSACTIONS);
       } finally {
         setLoading(false);
       }
